@@ -11,6 +11,7 @@ nome = input("Infore seu nome: ")
 sexo = input("Informe seu sexo(F ou M): ")
 estadoCivil = input("Informe seu estado civil: ")
 
+#Converte o texto em minusculo
 sexo = sexo.lower()
 estadoCivil = estadoCivil.lower()
 
