@@ -1,16 +1,3 @@
-"""Foi feita uma pesquisa entre os habitantes de uma região. 
-Foram coletados os dados de idade, sexo (M/F) e salário. 
-Faça um algoritmo que informe:  
-a) a média de salário do grupo;
-b) maior e menor idade do grupo;
-c) quantidade de mulheres com salário a partir de R$ 5.000,00.
-Crie um menu com duas opções.
-Código |        Descrição
-1      |   Adicionar pessoa
-2      |   Exibir resultados e sair
-
-O final da leitura de dados se dará com quando o usuário digitar o número código 2.
-"""
 import os
 import sys
 
@@ -50,7 +37,6 @@ while True:
                     print("Opção invalida, tente novamente")
                     sexo = sexo.upper()
                 else:
-                    print("Opção invalida, tente novamente")
                     break
 
             while True:            
