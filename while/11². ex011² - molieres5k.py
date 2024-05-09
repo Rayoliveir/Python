@@ -45,9 +45,12 @@ while True:
 
             while True:        
                 sexo = input("Digite o sexo (M ou F): ")
-                if sexo != "M" or sexo != "F":
+                sexo = sexo.upper()
+                if sexo != 'M' and sexo != 'F':
                     print("Opção invalida, tente novamente")
+                    sexo = sexo.upper()
                 else:
+                    print("Opção invalida, tente novamente")
                     break
 
             while True:            
