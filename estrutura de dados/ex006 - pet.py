@@ -20,10 +20,20 @@ QUANTIDADE_PET = 2
 pets = []
 
 for i in range(QUANTIDADE_PET):
+    logo()
     nome_animal = input("Informe o nome do seu pet: ")
-    raca_animal = input("Informe o nome do ()")
-    idade_animal = 
-    porte_animal = 
-    alimentacao_animal = 
+    raca_animal = input(f"Informe a raça do(a) {nome_animal}: ")
+    idade_animal = int(input(f"Informe a idade do(a) {nome_animal}: "))
+    porte_animal = input(f"Informe o porte do(a) {nome_animal}: ")
+    alimentacao_animal = input(f"Informe a alimentação do(a) {nome_animal}: ")
 
-for i in range
+    pets.append(Pet(nome_animal, raca_animal, idade_animal, porte_animal, alimentacao_animal))
+
+logo()
+for i in pets:
+    print(f"Nome: {i.nome}")
+    print(f"Raça: {i.raca}")
+    print(f"Idade: {i.idade}")
+    print(f"Porte: {i.porte}")
+    print(f"Alimentação: {i.alimentacao}")
+    print("\n")
